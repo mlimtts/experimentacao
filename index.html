@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Experimentação em Growth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧪 Calculadora de Experimentos em Growth</h1>
+
+  <section id="ideacao">
+    <h2>1. Ideação</h2>
+    <input type="text" id="persona" placeholder="Persona" />
+    <textarea id="dor" placeholder="Dor"></textarea>
+    <input type="text" id="momento" placeholder="Momento" />
+    <input type="text" id="nsm" placeholder="North Star Metric (NSM)" />
+    <input type="text" id="proposito" placeholder="Propósito do Experimento" />
+    <textarea id="diagnostico" placeholder="Diagnóstico e Contexto"></textarea>
+    <textarea id="hipotese" placeholder="Eu sou louco em dizer que..."></textarea>
+  </section>
+
+  <section id="experimento">
+    <h2>2. Experimento</h2>
+    <input type="text" id="canal" placeholder="Canal / Ativo" />
+    <input type="text" id="metricas" placeholder="Métricas Intermediárias" />
+    <textarea id="solucao" placeholder="Solução proposta"></textarea>
+    <input type="text" id="responsavel" placeholder="Responsável" />
+    <input type="number" id="orcamento" placeholder="Orçamento (R$)" />
+    <input type="date" id="prazo" />
+    <textarea id="aprendizado" placeholder="Aprendizados esperados"></textarea>
+    <input type="text" id="metricaChave" placeholder="Métrica chave + valor esperado" />
+    <label><input type="checkbox" id="acessivel" /> Acessível</label>
+    <label><input type="checkbox" id="auditavel" /> Auditável</label>
+    <label><input type="checkbox" id="acionavel" /> Acionável</label>
+    <button onclick="gerarResumo()">Gerar Resumo do Experimento</button>
+    <button onclick="exportarTxt()">Exportar como .txt</button>
+  </section>
+
+  <section id="output">
+    <h2>📄 Resumo do Experimento</h2>
+    <pre id="resumoTexto"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
